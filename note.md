@@ -1,6 +1,6 @@
 # encrypt
 gpg
-gpg --encrypt -r xavani.ao@gmail.com my-unencrypted.txt
+gpg --encrypt -r email my-unencrypted.txt
 
 
 # decrypt
