@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, send_file
-# import gnupg
 import argparse
 
 import gnu
@@ -14,11 +13,11 @@ PASSPHRASE = ""
 PUBLICKEY_ID = ""
 PRIVATEKEY_ID = ""
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description="python3 main.py --public [public key path] --private [private key path] --passphrase [passphrase]")
+# parser.add_argument("Example",help="python3 main.py --public [public key path] --private [private key path] --passphrase [passphrase]")
 parser.add_argument("--public", help="Path public key")
 parser.add_argument("--private",help="Path private key")
 parser.add_argument("--passphrase",help="Passphrase private key")
-parser.add_argument("Example:",help="python3 main.py --public [public key path] --private [private key path] --passphrase [passphrase]")
 
 
 @api.route('/', methods=['GET'])
