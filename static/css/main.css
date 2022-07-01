@@ -1,0 +1,38 @@
+:root{
+    --hcolor: rgb(40, 40, 40);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 1%;
+    background-color: var(--hcolor);
+    color: white;
+}
+
+.container{
+    margin: 5% 0%;
+}
+
+.container .upload{
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.upload-btn{
+    
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    padding: 1%;
+    background-color: var(--hcolor);
+    color: white;
+    text-align: center;
+}

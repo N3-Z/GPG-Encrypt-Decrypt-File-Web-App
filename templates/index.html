@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGP - Encrypt Decrypt File</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <!-- <link rel="stylesheet" href="../static/css/main.css"> -->
+</head>
+<body>
+    <header>
+        PGP - Encrypt Decrypt File
+    </header>
+
+    <div class="container">
+        <div class="container upload">
+            <div>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <span>Encrypt file</span>
+                    <input type="hidden" name="type" value="encrypt">
+                    <input type="file" name="file" id="">
+                    <input class="upload-btn" type="submit" value="upload">
+                </form>
+            </div>
+        </div>
+        <div class="container upload">
+            <div>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <span>Decrypt file</span>
+                    <input type="hidden" name="type" value="decrypt">
+                    <input type="file" name="file" id="">
+                    <input class="upload-btn" type="submit" value="upload">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        Powered by CSO Team &copy;
+    </footer>
+
+</body>
+</html>
